@@ -1,0 +1,5 @@
+- working cache
+- proper acls
+    - read only public
+    - assume role for write
+- de-dupe / attic
