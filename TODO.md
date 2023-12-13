@@ -1,5 +1,2 @@
-- working cache
-- proper acls
-    - read only public
-    - assume role for write
-- de-dupe / attic
+- Setup cloudfront and use vanity url
+- Setup attic server for de-dupe and jit signing

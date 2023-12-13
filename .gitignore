@@ -1,3 +1,17 @@
+### Nix
+result
+result-*
+
+### VSCode
+.vscode/
+
+### Terraform
+.terraform/
+
+### Local Environment
 .direnv/
+.env
+
+## Cache secrets
 public-key
 secret-key
