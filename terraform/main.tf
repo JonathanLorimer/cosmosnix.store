@@ -82,8 +82,12 @@ resource "aws_iam_role" "push_cosmosnix_store" {
         "Action" : "sts:AssumeRoleWithWebIdentity",
         "Condition" : {
           "StringEquals" : {
-            "token.actions.githubusercontent.com:sub" : "repo:informalsystems/cosmos.nix:*",
             "token.actions.githubusercontent.com:aud" : "sts.amazonaws.com"
+          }
+          "ForAnyValue:StringLike" : {
+            "token.actions.githubusercontent.com:sub" : [
+              "repo:informalsystems/cosmos.nix:*",
+            ]
           }
         }
       }
